@@ -31,6 +31,7 @@ Not all UHC worlds have to be PVP based, but since that's the most common way to
 *These can only be modified by changing the values within the datapack itself. I've included comments in the `init`, `start`, and `spread` functions to tell you what to change.*
 
 ### A note on using this datapack:
-I've chosen to make this pack unlicenced, so you *technically* don't have to attribute anything you do with the files to me. But, if you are feeling kind, **please mention this repository** if you decide to use it. It would mean a lot!
+
+If you are feeling kind, **please mention this repository** if you decide to use it. It would mean a lot!
 
 Also, if you improve this pack at all, **please let me know**! I'd love to include improvements in a new release.
