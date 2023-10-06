@@ -3,7 +3,7 @@
 scoreboard players set running UHC 3
 
 execute as @a at @s run playsound minecraft:block.end_portal.spawn master @s ~ ~ ~ 1 1
-execute as @a at @s run playsound minecraft:music_disc.otherside record @s ~ 100 ~ 1 1 0.5
+execute as @a at @s run playsound minecraft:music_disc.otherside record @s ~ 1000 ~ 1000
 
 tellraw @a [{"text": "[","color": "red"},{"text": "UHC","color": "yellow"},{"text": "] "},{"text": "Game Over!","color": "dark_aqua","bold": true}]
 title @a title {"text": "Game Over!","color": "dark_aqua"}

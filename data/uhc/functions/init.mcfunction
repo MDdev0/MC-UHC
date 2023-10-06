@@ -47,9 +47,10 @@ gamerule doDaylightCycle false
 gamerule doWeatherCycle false
 
 #Borderbar - set numbers to min and max for readablility
-bossbar add border {"text": "Worldborder: 2000 to 25 over 120 minutes","color": "blue"}
+bossbar remove minecraft:border
+bossbar add border {"text": "Border: 2000 block radius | Time: 2:00:00;00","color": "dark_purple"}
 bossbar set minecraft:border visible true
-bossbar set minecraft:border color blue
+bossbar set minecraft:border color purple
 scoreboard players set border UHC 0
 
 #Output
