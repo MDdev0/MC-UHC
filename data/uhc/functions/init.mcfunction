@@ -33,6 +33,8 @@ scoreboard objectives setdisplay belowName Kills
 
 #Death Detection
 scoreboard objectives add Dead deathCount
+tag @a remove dead
+tag @a remove player
 
 #Spectating
 team add Spectator

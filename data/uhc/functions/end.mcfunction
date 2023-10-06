@@ -1,6 +1,6 @@
 # End of Game
 
-scoreboard players set running UHC 2
+scoreboard players set running UHC 3
 
 execute as @a at @s run playsound minecraft:block.end_portal.spawn master @s ~ ~ ~ 1 1
 execute as @a at @s run playsound minecraft:music_disc.otherside record @s ~ 100 ~ 1 1 0.5
