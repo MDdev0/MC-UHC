@@ -7,6 +7,7 @@ scoreboard objectives add UHC dummy
 scoreboard players set running UHC 0
 scoreboard players set sudden_death UHC 0
 scoreboard players set num_teams UHC 0
+scoreboard players set 2 UHC 2
 
 # Running: 0 = Not running. 1 = Running. 2 = Start imminent (post-spread). 3 = Finished
 
@@ -14,6 +15,12 @@ scoreboard players set hours UHC 0
 scoreboard players set minutes UHC 0
 scoreboard players set seconds UHC 0
 scoreboard players set centi UHC 0
+
+# Border Distance
+scoreboard objectives add UHCx dummy
+scoreboard objectives add UHCz dummy
+scoreboard objectives add UHCdist dummy
+scoreboard players set n1 UHCdist -1
 
 #Health List
 scoreboard objectives add HP health
@@ -38,7 +45,7 @@ gamerule doDaylightCycle false
 gamerule doWeatherCycle false
 
 #Borderbar - set numbers to min and max for readablility
-bossbar add border {"text": "Worldborder Diameter: 5000 to 50 over 120 minutes","color": "blue"}
+bossbar add border {"text": "Worldborder: 2000 to 25 over 120 minutes","color": "blue"}
 bossbar set minecraft:border visible true
 bossbar set minecraft:border color blue
 scoreboard players set border UHC 0
