@@ -16,9 +16,9 @@ Not all UHC worlds have to be PVP based, but since that's the most common way to
 3. Set the number of teams with `/scoreboard players set num_teams UHC <0-6>`. Set 0 for no teams, or 2-6 teams.
 	* If you set a number of teams, you should run `/function uhc:randomize` to randomize teams, or manually add each player to a team.
 4. Run `/function uhc:spread` to spread out all the players.
-5. Count it down, then run `/function uhc:start` to start!
+5. Run `/function uhc:countdown` to start!
 6. If you want the game to end faster, trigger **sudden death** with `/function uhc:sudden_death`!
-	* Shrinks the border to 5 blocks wide in the next 5 minutes
+	* Shrinks the border to 10 blocks wide in the next 5 minutes
 	* Gives all remaining players a glowing outline
 
 ## Default game settings:
