@@ -6,7 +6,9 @@ scoreboard players reset @a
 scoreboard objectives add UHC dummy
 scoreboard players set running UHC 0
 scoreboard players set sudden_death UHC 0
-scoreboard players set num_teams UHC 6
+scoreboard players set num_teams UHC 0
+
+# Running: 0 = Not running. 1 = Running. 2 = Start imminent (post-spread). 3 = Finished
 
 scoreboard players set hours UHC 0
 scoreboard players set minutes UHC 0
@@ -35,13 +37,12 @@ scoreboard objectives add Spectate trigger
 gamerule doDaylightCycle false
 gamerule doWeatherCycle false
 
-#CHANGE THESE NUMBERS AS WELL IF YOU CHANGE THE BORDER SIZE OR TIME, OTHERWISE PLAYERS WILL BE CONFUSED!
 #Borderbar - set numbers to min and max for readablility
-bossbar add border {"text":"Worldborder: 50 <-- 5000 over 120 minutes","color":"gold"}
+bossbar add border {"text": "Worldborder Diameter: 5000 to 50 over 120 minutes","color": "blue"}
 bossbar set minecraft:border visible true
 bossbar set minecraft:border color blue
-scoreboard players set border UHC 0 
+scoreboard players set border UHC 0
 
 #Output
-tellraw @a {"text":"UHC Initialized.","color":"dark_aqua"}
-tellraw @a [{"text":"Click to ","color":"dark_blue","bold":"false"},{"text":"Join","color":"dark_red","bold":"true","clickEvent":{"action":"run_command","value":"/trigger Spectate set 1"}},{"text":" or "},{"text":"Leave","color":"dark_red","bold":"true","clickEvent":{"action":"run_command","value":"/trigger Spectate set 0"}},{"text":" Spectator Mode."}]
+tellraw @a [{"text": "[","color": "red"},{"text": "UHC","color": "yellow"},{"text": "] "},{"text": "UHC Initialized.","color": "dark_aqua"}]
+tellraw @a [{"text": "Click to ","color": "dark_gray","bold": false},{"text": "Join","color": "blue","bold": true,"clickEvent":{"action": "run_command","value": "/trigger Spectate set 1"}},{"text": " or "},{"text": "Leave","color": "blue","bold": true,"clickEvent":{"action": "run_command","value": "/trigger Spectate set 0"}},{"text": " Spectator Mode."}]

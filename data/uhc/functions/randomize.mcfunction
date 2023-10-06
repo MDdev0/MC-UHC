@@ -24,6 +24,15 @@ team add Magenta
 team modify Magenta color light_purple
 team modify Magenta seeFriendlyInvisibles false
 
-function uhc:randomize_loop
+team add Orange
+team modify Magenta color gold
+team modify Magenta seeFriendlyInvisibles false
 
-tellraw @a {"text":"Randomized Teams.","color":"dark_purple"}
+team add Purple
+team modify Magenta color dark_purple
+team modify Magenta seeFriendlyInvisibles false
+
+execute if score num_teams UHC matches 1.. run function uhc:randomize_loop
+
+execute if score num_teams UHC matches 1.. run tellraw @a [{"text": "[","color": "red"},{"text": "UHC","color": "yellow"},{"text": "] "},{"text": "Randomized Teams.","color": "dark_purple"}]
+execute unless score num_teams UHC matches 1.. run tellraw @a [{"text": "[","color": "red"},{"text": "UHC","color": "yellow"},{"text": "] "},{"text": "Created empty teams.","color": "light_purple"}]
