@@ -25,12 +25,12 @@ team modify Magenta color light_purple
 team modify Magenta seeFriendlyInvisibles false
 
 team add Orange
-team modify Magenta color gold
-team modify Magenta seeFriendlyInvisibles false
+team modify Orange color gold
+team modify Orange seeFriendlyInvisibles false
 
 team add Purple
-team modify Magenta color dark_purple
-team modify Magenta seeFriendlyInvisibles false
+team modify Purple color dark_purple
+team modify Purple seeFriendlyInvisibles false
 
 execute if score num_teams UHC matches 1.. run function uhc:randomize_loop
 
